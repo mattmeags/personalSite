@@ -1,0 +1,108 @@
+html, body {
+  box-sizing: border-box;
+  height: 100%;
+  overflow: hidden;
+  font-family: sans-serif;
+  padding-right: 15px;
+  background: url("images/background.jpg") no-repeat center center fixed;
+  -webkit-background-size: 100% auto;
+  -moz-background-size: 100% auto;
+  -ms-background-size: 100% auto;
+  -o-background-size: 100% auto;
+  background-size: 100% auto;
+  color: #fff;
+  margin-top: 0; }
+
+nav {
+  float: right;
+  margin-right: 28.5%;
+  position: relative; }
+  nav ul li {
+    list-style: none; }
+    nav ul li a {
+      color: #fff;
+      font-size: 24px;
+      font-weight: normal;
+      text-decoration: none;
+      padding: 15px 0 15px 0;
+      display: block; }
+      nav ul li a:first-child {
+        padding-top: 0; }
+
+#work, #resume, #contact {
+  display: none;
+  position: absolute;
+  width: 450px;
+  right: 15px; }
+
+.contentWrapper {
+  position: relative; }
+
+#about {
+  /*position: absolute;
+  right: 130px;
+  top:115px;
+  display: block;
+  margin-top: 50px;*/
+  position: relative;
+  top: 200px;
+  float: left;
+  color: #fff;
+  text-align: center; }
+  #about span {
+    display: block;
+    color: #fff;
+    font-size: 24px;
+    font-weight: normal; }
+  #about #name {
+    color: #fff;
+    font-size: 30px;
+    font-weight: normal; }
+  #about img {
+    height: 150px;
+    width: 150px; }
+
+#resume {
+  overflow-y: scroll; }
+  #resume .entry {
+    width: 100%;
+    margin: 10px 0 10px 0;
+    float: right; }
+    #resume .entry:last-child {
+      margin-bottom: 25px; }
+  #resume .educationSection {
+    clear: both;
+    margin-top: 20px; }
+    #resume .educationSection .school {
+      display: block; }
+  #resume .certificationSection {
+    clear: both;
+    margin-top: 20px; }
+    #resume .certificationSection ul {
+      padding-right: 0;
+      -webkit-padding-start: 0; }
+      #resume .certificationSection ul li {
+        list-style: none;
+        margin: 5px 0 5px 0; }
+  #resume .col-1 {
+    width: 55%;
+    float: left; }
+    #resume .col-1 .role {
+      display: block; }
+  #resume .col-2 {
+    width: 45%;
+    float: right; }
+  #resume a {
+    text-decoration: none;
+    color: #46BCDE;
+    font-size: 18px;
+    font-weight: normal; }
+
+#contact a {
+  margin: 15px 0 15px 0; }
+#contact img {
+  display: block;
+  height: 50px;
+  width: 50px; }
+
+/*# sourceMappingURL=style.css.map */

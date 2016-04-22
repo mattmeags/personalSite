@@ -1,0 +1,152 @@
+//nav styling
+//$font:;
+//$fontSize1:;
+
+@mixin verticalCenter ($padding){
+  margin-top: $padding;
+  margin-bottom: $padding;
+}
+@mixin fontSettings($color, $size, $weight:normal) {
+  color: $color;
+  font-size: $size;
+  font-weight: $weight
+}
+@mixin square($size) {
+  height: $size;
+  width: $size;
+}
+html{
+  box-sizing: border-box;
+  height: 100%;
+  overflow: hidden;
+  font-family: sans-serif;
+  padding-right:15px;
+  background: url('images/background.jpg') no-repeat center center fixed;
+  -webkit-background-size: 100% auto;
+  -moz-background-size: 100% auto;
+  -ms-background-size: 100% auto;
+  -o-background-size: 100% auto;
+  background-size: 100% auto;
+  color: #fff;
+  margin-top:0;
+  }
+body{
+  @extend html;
+}
+nav{
+  float:right;
+  //@include verticalCenter(50%);
+  margin-right:28.5%;
+  position: relative;
+  ul{
+    li{
+      list-style: none;
+      a{
+        @include fontSettings(#fff, 24px);
+        text-decoration: none;
+        padding: 15px 0 15px 0;
+        display: block;
+        &:first-child{
+          padding-top:0;
+        }
+      }
+    }
+  }
+}
+#work{
+  display: none;
+  position: absolute;
+  width:450px;
+  right:15px;
+
+}
+#resume{
+  @extend #work;
+}
+#contact{
+  @extend #work;
+}
+.contentWrapper{
+  position: relative;
+}
+#about{
+  /*position: absolute;
+  right: 130px;
+  top:115px;
+  display: block;
+  margin-top: 50px;*/
+  position: relative;
+  top:200px;
+  float:left;
+  color: #fff;
+  text-align: center;
+  span{
+    display: block;
+    @include fontSettings(#fff, 24px);
+  }
+  #name{
+    @include fontSettings(#fff, 30px);
+  }
+  img{
+    height: 150px;
+    width: 150px;
+  }
+}
+#resume{
+  overflow-y: scroll;
+  h3{
+
+  }
+  .entry{
+    width:100%;
+    margin:10px 0 10px 0;
+    float:right;
+    &:last-child{
+      margin-bottom: 25px;
+    }
+  }
+  .educationSection{
+    clear:both;
+    margin-top:20px;
+    .school {
+      display: block;
+    }
+  }
+  .certificationSection{
+    clear:both;
+    margin-top:20px;
+    ul{
+      padding-right:0;
+      -webkit-padding-start: 0;
+      li{
+        list-style: none;
+        margin:5px 0 5px 0;
+      }
+    }
+  }
+  .col-1{
+    width: 55%;
+    float:left;
+    .role{
+      display: block;
+    }
+  }
+  .col-2{
+    width: 45%;
+    float:right;
+  }
+  a{
+    text-decoration:none;
+    @include fontSettings(#46BCDE, 18px);
+  }
+}
+#contact{
+  a{
+    margin:15px 0 15px 0;
+  }
+  img {
+    display: block;
+    @include square(50px);
+    //margin: 0 auto;
+  }
+}
